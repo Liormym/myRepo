@@ -1,0 +1,14 @@
+.notes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .note{
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    background-image: url(notebg.png);
+  }

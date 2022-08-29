@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="taskBoard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <title>Task Board</title>
 </head>
-<body>
-    
+<body onload="withoutFade()">
+        <div>
+        <img class="title" src="title.png" alt="title"><br>
+    </div>
+    <div>
+        <form class="form">
+            <label for="info">please insert the task</label>
+            <textarea class="mb-3 info" type="text" id="info" ></textarea>
+            <input type="date" placeholder="date" id="date"></input><br>
+            <input type="time" id="userTime"></input><br>
+            <div class="button">
+                <button  class="bt" id="b1" onmouseover="newcolor1()" onmouseleave="removeColor1()" onclick="noteCreateObj(event)">Save</button>
+                <button type="reset" class="bt" id="b2" onmouseover="newcolor2()" onmouseleave="removeColor2()">Reset</button>
+            </div>
+        </form>
+        <div class="notes" id="notes"> 
+        </div>
+        <script src="taskBoard.js"></script>
+            
 </body>
+
 </html>
