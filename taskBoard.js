@@ -12,7 +12,7 @@ function newcolor2() {
 }
 function removeColor2() {
     document.getElementById("b2").style.backgroundColor= "#72FFFF";
-    document.getElementById("b2").style.color = "black";
+    document.getElementById("b2").style.color = "red";
 }
 
 const addText=document.getElementById("info");
